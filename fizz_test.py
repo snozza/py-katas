@@ -12,7 +12,7 @@ def test_dividable_by_5_is_buzz():
 
 def test_not_dividable_by_5_is_not_buzz():
     num = 9
-    assert (num / 5) is True 
+    assert (num % 5 == 0) is False
 
 def is_fizz(num):
     return True if (num % 3) == 0 else False 
