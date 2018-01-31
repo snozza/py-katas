@@ -28,7 +28,7 @@ def test_fizz_buzz_is_buzz():
 
 def test_fizz_buzz_is_num():
     num = 4
-    assert (num if is_fizz(num) == False and is_fizz(num) == False else None) == 4 
+    assert fizz_buzz(num) is num
 
 def is_fizz(num):
     return (num % 3 == 0)
@@ -44,3 +44,4 @@ def fizz_buzz(num):
         return 'fizz'
     if is_buzz(num):
         return 'buzz'
+    return num
