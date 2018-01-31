@@ -16,7 +16,7 @@ def test_not_dividable_by_5_is_not_buzz():
 
 def test_dividable_by_5_and_3_is_fizzbuzz():
     num = 15
-    assert (is_fizz(num) and is_buzz(num)) is False
+    assert (is_fizz(num) and is_buzz(num)) is True
 
 def is_fizz(num):
     return (num % 3 == 0) 
