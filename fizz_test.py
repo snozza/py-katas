@@ -20,7 +20,7 @@ def test_dividable_by_5_and_3_is_fizzbuzz():
 
 def test_fizz_buzz_is_fizz():
     num = 6
-    assert is_fizz(num) is 'fizz'
+    assert ('fizz' if is_fizz(num) else num) is 'fizz'
 
 def is_fizz(num):
     return (num % 3 == 0) 
